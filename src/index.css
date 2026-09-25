@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #fbf9f4;
+  --color-surface-dim: #dcdad5;
+  --color-surface-bright: #fbf9f4;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f3ee;
+  --color-surface-container: #f0eee9;
+  --color-surface-container-high: #eae8e3;
+  --color-surface-container-highest: #e4e2dd;
+  --color-on-surface: #1b1c19;
+  --color-on-surface-variant: #444655;
+  --color-inverse-surface: #30312e;
+  --color-inverse-on-surface: #f2f1ec;
+  --color-outline: #747686;
+  --color-outline-variant: #c4c5d7;
+  --color-surface-tint: #2650da;
+  --color-primary: #0030a5;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1746d1;
+  --color-on-primary-container: #bdc8ff;
+  --color-inverse-primary: #b8c4ff;
+  --color-secondary: #5c5e67;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #dedfe9;
+  --color-on-secondary-container: #60626b;
+  --color-tertiary: #383f4d;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #4f5664;
+  --color-on-tertiary-container: #c5cbdc;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #dde1ff;
+  --color-primary-fixed-dim: #b8c4ff;
+  --color-on-primary-fixed: #001453;
+  --color-on-primary-fixed-variant: #0037b9;
+  --color-secondary-fixed: #e0e2ec;
+  --color-secondary-fixed-dim: #c4c6d0;
+  --color-on-secondary-fixed: #191b23;
+  --color-on-secondary-fixed-variant: #44474f;
+  --color-tertiary-fixed: #dce2f4;
+  --color-tertiary-fixed-dim: #c0c6d8;
+  --color-on-tertiary-fixed: #151c28;
+  --color-on-tertiary-fixed-variant: #404755;
+  --color-background: #fbf9f4;
+  --color-on-background: #1b1c19;
+  --color-surface-variant: #e4e2dd;
+
+  --font-serif: "Noto Serif", Georgia, serif;
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+  --font-display-hero: "Noto Serif", Georgia, serif;
+  --font-headline-xl: "Noto Serif", Georgia, serif;
+  --font-headline-lg: "Noto Serif", Georgia, serif;
+  --font-headline-md: "Noto Serif", Georgia, serif;
+  --font-headline-sm: "Noto Serif", Georgia, serif;
+  --font-body-lg: "Manrope", system-ui, sans-serif;
+  --font-body-md: "Manrope", system-ui, sans-serif;
+  --font-body-sm: "Manrope", system-ui, sans-serif;
+  --font-label-caps: "Manrope", system-ui, sans-serif;
+  --font-label-ui: "Manrope", system-ui, sans-serif;
+  --font-stat-numeral: "Manrope", system-ui, sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-sans);
+  }
+}
+
+/* Material Symbols Outlined font */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+/* Custom Stitch Typography Helper Classes */
+.font-display-hero {
+  font-family: "Noto Serif", Georgia, serif;
+}
+
+.font-headline-xl {
+  font-family: "Noto Serif", Georgia, serif;
+}
+
+.font-headline-lg {
+  font-family: "Noto Serif", Georgia, serif;
+}
+
+.font-headline-md {
+  font-family: "Noto Serif", Georgia, serif;
+}
+
+.font-headline-sm {
+  font-family: "Noto Serif", Georgia, serif;
+}
+
+.font-label-caps {
+  font-family: "Manrope", system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.font-label-ui {
+  font-family: "Manrope", system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.font-stat-numeral {
+  font-family: "Manrope", system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+}
+
+.font-body-lg {
+  font-family: "Manrope", system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.font-body-md {
+  font-family: "Manrope", system-ui, sans-serif;
+  letter-spacing: -0.005em;
+}
+
+.font-body-sm {
+  font-family: "Manrope", system-ui, sans-serif;
+}
+
+.text-label-caps {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.text-label-ui {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+.text-stat-numeral {
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.04em;
+  font-weight: 300;
+}
+
+.text-headline-xl {
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  font-weight: 400;
+}
+
+.text-headline-lg {
+  font-size: clamp(26px, 3.5vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+.text-headline-sm {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+
+.text-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+
+.text-body-md {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.005em;
+}
+
+.text-body-sm {
+  font-size: 14px;
+  line-height: 22px;
+}
